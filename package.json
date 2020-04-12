@@ -9,7 +9,9 @@
     "dev": "yarn nodemon",
     "test": "yarn test:static && yarn test:unit",
     "test:static": "yarn tsc",
-    "test:unit": "yarn jest --config=.jestrc.js"
+    "test:unit": "yarn jest --config=.jestrc.js",
+    "lint": "eslint \"*.ts\" --fix",
+    "format": "yarn prettier --write \"src/**/*\" --loglevel silent"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -18,8 +20,12 @@
     "@babel/preset-typescript": "^7.9.0",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
     "jest": "^25.3.0",
     "nodemon": "^2.0.3",
+    "prettier": "^2.0.4",
     "typescript": "^3.8.3"
   }
 }
