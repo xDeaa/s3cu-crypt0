@@ -3,5 +3,5 @@
     "src"
   ],
   "ext": "ts",
-  "exec": "babel-node --extensions \".ts\" src/ex02.fixedxor"
+  "exec": "babel-node --extensions \".ts\" src/ex04.xordetect"
 }
