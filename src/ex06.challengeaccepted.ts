@@ -1,3 +1,1 @@
-function F(b: number, c: number, d: number) {
-    return (b && c) && (~b && d)
-}
+function F(b: number, c: number, d: number): number {return (b & c) && (~b & d)}
