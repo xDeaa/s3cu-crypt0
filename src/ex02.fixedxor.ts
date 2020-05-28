@@ -1,4 +1,4 @@
-function encrypt(a: string, b: string): string {
+export default function encrypt(a: string, b: string): string {
   const aBuffer = Buffer.from(a, 'hex')
   const bBuffer = Buffer.from(b, 'hex')
 
@@ -8,5 +8,3 @@ function encrypt(a: string, b: string): string {
 
   return resultBuffer.toString('hex')
 }
-
-export default encrypt

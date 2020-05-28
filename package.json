@@ -1,9 +1,8 @@
 {
-  "name": "Typescript-Template",
+  "name": "s3cu-crypt0",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Gi-jutsu/Typescript-Template.git",
-  "author": "Dylan DE SOUSA <dds1991@hotmail.fr>",
+  "repository": "https://github.com/xDeaa/s3cu-crypt0.git",
   "license": "MIT",
   "scripts": {
     "dev": "yarn nodemon",

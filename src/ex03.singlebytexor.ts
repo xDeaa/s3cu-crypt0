@@ -18,7 +18,7 @@ const generateDecodedText = (input: string, key: number): string => {
     return Buffer.from(input, 'hex').map(e => e ^ key).toString()
 }
 
-const singleByteXOR = (encodedString: string): string => {
+export default function singleByteXOR(encodedString: string): string {
     const results: Result[] = []
     for (let i = 0; i < 255; i++) {
         const decodedText = generateDecodedText(encodedString, parseInt(i.toString(16)))
@@ -27,4 +27,3 @@ const singleByteXOR = (encodedString: string): string => {
     return results.sort((a, b) => b.score - a.score)[0].decodedText
 }
 
-console.log(singleByteXOR('1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'))
