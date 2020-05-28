@@ -1,5 +1,6 @@
-export const hello = (): string => {
-  return 'H3LL0 FR0M FRANC3'
-}
+import convertHexToBase64 from './ex01.hex2base64'
+import encrypt from './ex02.fixedxor'
 
-console.log(hello())
+console.log(convertHexToBase64("49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d"));
+console.log(encrypt('1c0111001f010100061a024b53535009181c', '686974207468652062756c6c277320657965'))
+

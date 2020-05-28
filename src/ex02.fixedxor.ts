@@ -1,4 +1,4 @@
-function encrypt(a: string, b: string): string {
+export default function encrypt(a: string, b: string): string {
   const aBuffer = Buffer.from(a, 'hex')
   const bBuffer = Buffer.from(b, 'hex')
 
@@ -8,5 +8,3 @@ function encrypt(a: string, b: string): string {
 
   return resultBuffer.toString('hex')
 }
-
-console.log(encrypt('1c0111001f010100061a024b53535009181c', '686974207468652062756c6c277320657965'))
