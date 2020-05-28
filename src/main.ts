@@ -3,6 +3,8 @@ import encrypt from './ex02.fixedxor'
 import singleByteXOR from './ex03.singlebytexor'
 import decode from './ex04.xordetect'
 import repeatKeyXOR from './ex05.repeatxor'
+import md5 from './ex06.challengeaccepted'
+import cesar from './ex06.challengeaccepted_cesar'
 
 console.log("== Challenge 1 ==");
 console.log(convertHexToBase64("49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d"));
@@ -18,3 +20,13 @@ console.log(decode(`${process.cwd()}/data/h014.txt`))
 
 console.log("== Challenge 5 ==");
 console.log(repeatKeyXOR("Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal", "ICE"))
+
+console.log("== Challenge 6 ==");
+console.log(md5(''), 'd41d8cd98f00b204e9800998ecf8427e')
+
+console.log(md5("toto"))
+//f71dbe52628a3f83a77ab494817525c6
+//ab4168e830ea86e287fb264a1025437e8
+
+console.log("== Challenge 6 CESAR ==");
+console.log(cesar("toto", 5))
