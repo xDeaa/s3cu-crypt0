@@ -3,10 +3,10 @@ import {generateDecodedText, rankText} from './ex03.singlebytexor'
 
 export default function decode(filePath: string) {
   const data = fs.readFileSync(filePath, 'utf8').split('\n')
-  let sortedResults = []
+  const sortedResults = []
 
   for (const row of data) {
-    let results = []
+    const results = []
 
     for (let i = 0; i < 255; i++) {
       const key = parseInt(i.toString(16))
