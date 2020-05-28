@@ -34,7 +34,7 @@ You **CAN** use any programming language you want.
 
 ## <a name='challenges'>🐨 Challenges</a>
 
-### 01 Convert hex to base64
+### 01 Convert hex to base64 ✅
 
 Filename : **`ex01.hex2base64.[ext]`**
 
@@ -50,7 +50,7 @@ So go ahead and make that happen. You'll need to use this code for the rest of t
 
 > Always operate on raw bytes, never on encoded strings. Only use hex and base64 for pretty-printing.
 
-### 02 Fixed XOR
+### 02 Fixed XOR ✅
 
 Filename : **`ex02.fixedxor.[ext]`**
 
@@ -68,7 +68,7 @@ If your function works properly, then when you feed it the string:
 
 `746865206b696420646f6e277420706c6179`
 
-### 03 Single-byte XOR cipher
+### 03 Single-byte XOR cipher ✅
 
 Filename : **`ex03.singlebytexor.[ext]`**
 
@@ -84,7 +84,7 @@ How? Devise some method for "scoring" a piece of English plaintext. Character fr
 
 > You now have our permission to make ["ETAOIN SHRDLU"](https://en.wikipedia.org/wiki/Etaoin_shrdlu) jokes.
 
-### 04 Detect single-character XOR
+### 04 Detect single-character XOR ✅
 
 Filename : **`ex04.xordetect.[ext]`**
 
@@ -94,7 +94,7 @@ Find it.
 
 > Your code from the previous exercise should help.
 
-### 05 Implement repeating-key XOR
+### 05 Implement repeating-key XOR ✅
 
 Filename : **`ex05.reapeatxor.[ext]`**
 
